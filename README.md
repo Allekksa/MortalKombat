@@ -1,3 +1,3 @@
-# Mortalcombat
+# MortalKombat
 
 HTML CSS JS
