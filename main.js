@@ -92,11 +92,12 @@ const $player2 = {name: 'Kitana',
 
 
 // Task #3 (*)
+const parentDiv =  document.querySelector('.arenas')
 
 function createPlayer(classname, player){
   const div = document.createElement('div');
   div.classList.add(classname);
-  document.querySelector('.arenas').appendChild(div);
+  parentDiv.appendChild(div);
 
   const progressbar = document.createElement('div');
   progressbar.classList.add('progressbar');
