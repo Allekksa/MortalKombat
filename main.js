@@ -25,20 +25,25 @@ const $player2 = {name: 'Kitana',
 //   const player1 = document.createElement('div');
 //   player1.classList.add('player1');
 //   document.querySelector('.root').appendChild(player1);
+
 //   const progressbar = document.createElement('div');
 //   progressbar.classList.add('progressbar');
 //   document.querySelector('.player1').appendChild(progressbar);
+
 //   const life = document.createElement('div');
 //   life.classList.add('life');
 //   life.style.width = '100%';
 //   document.querySelector('.progressbar').appendChild(life);
+
 //   const name = document.createElement('div');
 //   name.classList.add('name');
 //   document.querySelector('.progressbar').appendChild(name);
 //   name.innerText = $player1.name;
+
 //   const character = document.createElement('div');
 //   character.classList.add('character');
 //   document.querySelector('.player1').appendChild(character);
+
 //   const img = document.createElement('img');
 //   document.querySelector('.character').appendChild(img);
 //   img.src = 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif';
@@ -47,26 +52,30 @@ const $player2 = {name: 'Kitana',
 
 // ## Task #2
 
-
 // function createPlayer(classname, playerName, hp){
  
 //   const div = document.createElement('div');
 //   div.classList.add(classname);
 //   document.querySelector('.arenas').appendChild(div);
+
 //   const progressbar = document.createElement('div');
 //   progressbar.classList.add('progressbar');
 //   document.querySelector('.' + classname).appendChild(progressbar);
+
 //   const life = document.createElement('div');
 //   life.classList.add('life');
 //   life.style.width = hp + '%';
 //   document.querySelector('.' + classname + ' ' + '.progressbar').appendChild(life);
+
 //   const name = document.createElement('div');
 //   name.classList.add('name');
 //   document.querySelector('.' + classname + ' ' + '.progressbar').appendChild(name);
 //   name.innerText = playerName;
+
 //   const character = document.createElement('div');
 //   character.classList.add('character');
 //   document.querySelector('.' + classname).appendChild(character);
+
 //   const img = document.createElement('img');
 //   document.querySelector('.' + classname + ' ' + '.character').appendChild(img);
 //   img.src = 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif'
@@ -85,24 +94,28 @@ const $player2 = {name: 'Kitana',
 // Task #3 (*)
 
 function createPlayer(classname, player){
- 
   const div = document.createElement('div');
   div.classList.add(classname);
   document.querySelector('.arenas').appendChild(div);
+
   const progressbar = document.createElement('div');
   progressbar.classList.add('progressbar');
   document.querySelector('.' + classname).appendChild(progressbar);
+
   const life = document.createElement('div');
   life.classList.add('life');
   life.style.width = player.hp + '%';
   document.querySelector('.' + classname + ' ' + '.progressbar').appendChild(life);
+
   const name = document.createElement('div');
   name.classList.add('name');
   document.querySelector('.' + classname + ' ' + '.progressbar').appendChild(name);
   name.innerText = player.name;
+
   const character = document.createElement('div');
   character.classList.add('character');
   document.querySelector('.' + classname).appendChild(character);
+  
   const img = document.createElement('img');
   document.querySelector('.' + classname + ' ' + '.character').appendChild(img);
   img.src = player.img;
